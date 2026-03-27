@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: honeydew;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+        .productos{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+        }
+        .productos img{
+            border-radius: 10px;
+            box-shadow: 7px 7px rgb(5, 5, 5);
+            background-color: rgb(83, 121, 218);
+            padding: 7px;
+        }
+        @media(min-width:256px)
+        {
+            .productos{
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+            }
+            .productos img{
+                width: 35%;
+            }
+        }
+             @media(min-width:560px)
+        {
+            .productos{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .productos img{
+                width: 25%;
+            }
+        }
+         @media(min-width:1280px)
+        {
+            .productos{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .productos img{
+                width: 40%;
+            }
+        }
+        header nav{
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            font-size: 50px;
+            margin: 15px 300px 15px 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            font-size: 25px;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button><a href="#">Inicio</a></button>
+            <button><a href="#">Productos</a></button>
+            <button><a href="#">Carrito</a></button>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="hero">
+            <img src="https://picsum.photos/id/683/600/400" alt="">
+        </div>
+            
+            
+        <h2>biografia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa accusantium quam nobis amet magnam deserunt
+            eius ipsam officia nesciunt temporibus perspiciatis fugit quibusdam sequi aut, dolor velit aperiam veritatis
+            explicabo.</p>
+        <section>
+            <h2>habilidades</h2>
+            <ul>
+                <li>Comercio electronico</li>
+                <li>marketing online</li>
+                <li>deseño wed ux/ui</li>
+                <li>maquetacion css</li>
+            </ul>
+        </section>
+
+    <section>
+        <h1>Productos Disponibles</h1>
+        <h2>Vea los productos en tendencia</h2>
+        <div class="productos">
+            <img src="https://picsum.photos/id/684/600/400" alt="">
+            <img src="https://picsum.photos/id/683/600/400" alt="">
+            <img src="https://picsum.photos/id/682/600/400" alt="">
+            <img src="https://picsum.photos/id/681/600/400" alt="">
+            <img src="https://picsum.photos/id/689/600/400" alt="">
+            <img src="https://picsum.photos/id/687/600/400" alt="">
+        </div>
+    </SEction>
+
+    </main>
+    <footer>
+        <h2>mis redes sociales</h2>
+        <a href="#">facebook</a>
+        <a href="#">intagram</a>
+        <a href="#">linkedin</a>
+        <a href="#">tik tok</a>
+        <blockquote>una cita de ejemplo</blockquote>
+    </footer>
+
+</body>
+
+</html>
